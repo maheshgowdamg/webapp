@@ -1,133 +1,394 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to DevOps</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f8f9fa;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        color: #343a40;
-      }
-      .background-container {
-        position: relative;
-        max-width: 1500px;
-        margin: 40px auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
-      }
-      .background-container::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url("https://st.depositphotos.com/57404040/60706/i/450/depositphotos_607063656-stock-photo-devops-devsecops-approach-app-development.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 1500px;
-        opacity: 0.5;
-        z-index: 1;
-      }
-      .container {
-        position: relative;
-        z-index: 2;
-        padding: 40px;
-      }
-      .header {
-        background-color: #007acc;
-        padding: 20px;
-        border-radius: 8px 8px 0 0;
-        color: white;
-        text-align: center;
-      }
-      .header h1 {
-        margin: 0;
-        font-size: 2.5em;
-        font-weight: 600;
-      }
-      .content {
-        padding: 20px;
-        text-align: center;
-      }
-      .content h2 {
-        color: #007acc;
-        margin-top: 0;
-        font-size: 1.8em;
-      }
-      .highlight {
-        background-color: #ffd700;
-        padding: 0 5px;
-        border-radius: 3px;
-      }
-      .devops-logo {
-        width: 400px;
-        margin: 20px 0;
-      }
-      .footer {
-        margin-top: 30px;
-        font-size: 1.1em;
-        color: #007acc; /* DevOps blue color */
-        text-align: center;
-        background-color: #f0f8ff; /* Light blue background for footer */
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .footer p {
-        margin: 10px 0;
-      }
-      .footer .highlight {
-        background-color: #ffeb3b; /* Highlight color */
-        color: #000; /* Text color for highlighted text */
-        font-weight: bold;
-      }
-      .content p {
-        font-weight: bold; /* Make text bold */
-        font-size: 1.2em;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="background-container">
-      <div class="container">
-        <div class="header">
-          <h1>Welcome to DevOps</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task17</title>
+    <!-- <link rel="stylesheet" href="template3.css"> -->
+     <style>
+#block1
+{
+    height: 600px;
+    width: 100vw;
+    background-image: url("WhatsApp\ Image\ 2024-07-19\ at\ 12.12.48\ PM.jpeg");
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+}
+#list
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+#items
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#list>a:hover
+{
+    text-decoration: underline red 5px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#fit
+{
+    font-size: 30px;
+    position: relative;
+    left: 690px;
+    top: 40px;
+}
+#train
+{
+    font-size: 40px;
+    position: relative;
+    left: 650px;
+    top: 25px;
+    
+}
+#neo
+{
+    font-size: 60px;
+    position: relative;
+    left: 610px;
+}
+#para1
+{
+    width: 900px;
+    height: 90px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 330px;
+    position: relative; 
+    bottom: 20px;
+}
+#btn1
+{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    left: 700px;
+}
+#btn1:hover
+{
+    background-color: white;
+    color: black;
+}
+#block2
+{
+    height: 600px;
+    width: 100vw;
+    background-image: url("us-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    color: white;
+    bottom: 25px;
+
+}
+#head1
+{
+    position: relative;
+    top: 100px;
+    left: 620px;
+}
+#line1
+{
+    height: 5px;
+    width: 60px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    position: relative;
+    right:10px;
+    top: 80px;
+}
+#why
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.us
+{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    top: 150px;
+}
+#block3
+{
+    height:500px;
+    width: 100vw;
+    background-image: url("healthy-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    position: relative;
+    bottom: 48px;
+    color: white;
+
+}
+#text5
+{
+    position: relative;
+    top: 100px;
+    left: 500px;
+}
+#btn2
+{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 690px;
+}
+#btn2:hover
+{
+    background-color: white;
+    color: black;
+}
+#para2
+{
+    height: 180px;
+    width: 1200px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    left: 150px;
+    top: 130px;
+}
+#block4
+{
+    height: 700px;
+    width: 100vw;
+    background-image: url("trainer-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    bottom: 70px;
+}
+#line2
+{
+    height: 5px;
+    width: 60px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    position: relative;
+    top: 70px;   
+}
+#trainersname
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 115px;
+    
+}
+#trainers
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 120px;
+}
+#block5
+{
+    height: 580px;
+    width: 100vw;
+    background-color: rgba(5, 17, 53, 0.944);
+    background-attachment: fixed;
+    position: relative;
+    bottom: 70px;
+}
+#line3
+{
+    height: 5px;
+    width: 60px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    position: relative;
+    right: 170px;
+    top: 30px;
+}
+#contact
+{
+    display: flex;    
+}
+.forms
+{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+#btn3
+{
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color:crimson;
+    border: 1px solid crimson;
+    color: white;
+    position: relative; 
+    left: 360px; 
+    margin-top: 15px; 
+}
+#block6
+{
+    width: 100vw;
+    height: 150px;
+    background-color: rgba(3, 1, 24, 0.914);
+    position: relative;
+    bottom: 70px;
+}
+#icons
+{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+}
+#des
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    position: relative;
+    top: 50px;
+}
+#end
+{
+    position: relative;
+    bottom: 50px;
+    left: 600px;
+}
+     </style>
+</head>
+<body>
+    <div id="block1">
+        <nav>
+        <div id="items">
+            <div>
+            <h2><a href="">NEOGYM</a></h2>
         </div>
-        <div class="content">
-          <img
-            src="https://media.istockphoto.com/id/1161702497/vector/team-of-programmer-concept-with-devops-software-development-practices-methodology-vector.jpg?s=612x612&w=0&k=20&c=5cqLQaudaYaXv3OdYQHjt-F-LhcuOiBhXWtHLMwj4PU="
-            alt="DevOps Logo"
-            class="devops-logo"
-          />
-          <h2>
-            By DevOps Team From 
-            <span class="highlight">Jspiders, Rajajinagar</span>
-          </h2>
-          <p>
-            We are thrilled to welcome you to the DevOps world! Here, we embrace
-            the principles of continuous integration, continuous delivery, and
-            automation to streamline development and operations. Let’s explore
-            the best practices and tools that drive efficient and scalable
-            software solutions. Happy learning and collaboration!
-          </p>
+            <div id="list">
+                <a href="">HOME</a>
+                <a href="">WHY US</a>
+                <a href="">TRAINERS</a>
+                <a href="">CONTACT</a>
+                <a href=""><i class="fa-brands fa-searchengin" style="color: #FFD43B;"></i></a>
+            </div>
         </div>
-        <div class="footer">
-          <p>
-            Corporate DevOps Trainer
-            <span class="highlight">Akshay Kumar S</span>
-          </p>
-          <p>&copy; 2024 Jspiders Rajajinagar. All rights reserved.</p>
-        </div>
-      </div>
+    </nav>
+    <div><h3 id="fit">FITNESS</h3></div>
+    <div><h2 id="train">TRAINING</h2></div>
+    <div><h1 id="neo">NEO GYM</h1></div>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, iste nesciunt? Dolorem neque eaque accusamus corporis totam quaerat iusto consequuntur, ipsa adipisci assumenda sit doloribus in officia ducimus expedita ea ut quibusdam explicabo </p>
+    <button id="btn1">CONTACT US</button>
     </div>
-  </body>
+    <div id="block2">
+        <h1 id="head1">WHY CHOOSE US</h1>
+        <hr id="line1">
+        <div id="why">
+            <div class="us">
+                <img src="u-1.png" alt="equipment" height="70px" width="70px">
+                <h3 style="font-size: 20px;">QUALITY EQUIPMENT</h3>
+                <p style="font-size: 19px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, reiciendis.</p>
+            </div>
+            <div class="us">
+                <img src="u-4.png" alt="nutrition" height="70px" width="70px">
+                <h3 style="font-size: 20px;">NUTRIION</h3>
+                <p style="font-size: 19px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati.</p>
+            </div>
+            <div class="us">
+                <img src="u-3.png" alt="diet" height="70px" width="70px">
+                <h3 style="font-size: 20px;">HEALTHY DIET PLAN</h3>
+                <p style="font-size: 19px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, accusamus?</p>
+            </div>
+            <div class="us">
+                <img src="u-2.png" alt="training" height="70px" width="70px">
+                <h3 style="font-size: 20px;">SPORT TRAINING</h3>
+                <p style="font-size: 19px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, laudantium.</p>
+            </div>
+        </div>
+    </div>
+    <div id="block3">
+        <h1 id="text5">HEALTHY MIND, HEALTHY BODY</h1>
+        <p id="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae pariatur numquam, debitis architecto, nostrum non consequatur ducimus sed et inventore consectetur animi ut. Qui, voluptas? Voluptatum iure quaerat non, dignissimos dolore reiciendis labore pariatur! Quia autem facere iste architecto, ducimus rem nemo quos id natus repellat possimus, excepturi non aut Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut laudantium aperiam eveniet? Hic ipsa dicta a, veniam quidem animi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur consequatur veritatis quas ipsa soluta,</p>
+        <button id="btn2">READ MORE</button>
+    </div>
+    <div id="block4">
+        <h1 style="position: relative; left: 600px; top: 90px;">OUR GYM TRAINERS</h1>
+        <hr id="line2">
+        <div id="trainersname">
+            <div><h3 style="position: relative; right: 70px;">Smirth Jon</h3></div>
+            <div><h3>Jean Doe</h3></div>
+            <div><h3 style="position: relative; left: 70px;">Alex Den</h3></div>
+        </div>
+        <div id="trainers">
+            <div><img src="t1 (1).jpg" alt="trainer1" style="border-radius: 20px; position: relative;"></div>
+            <div><img src="t2 (1).jpg" alt="trainer2" style="border-radius: 20px;"></div>
+            <div><img src="t3 (1).jpg" alt="trainer3" style="border-radius: 20px;"></div>
+        </div>
+    </div>
+    <div id="block5">
+        <div id="contact">
+        <img src="contact-img.jpg" alt="" height="580px" width="50%">
+        <div>
+            <h1 style="position: relative; left: 50px; top: 50px;">CONTACT US</h1>
+            <hr id="line3">
+            <form action="" method="post" style="position: relative; left: 50px; top: 50px;">
+            <div><input type="text" required placeholder="Name" name="name" class="forms"></div>
+            <div><input type="email" name="mail" required placeholder="Email" class="forms"></div>
+            <div><input type="tel" name="ph" required maxlength="10" placeholder="Phone Number" class="forms"></div>
+            <div><input type="text" name="message" required placeholder="Message" style="height: 100px;" class="forms"></div>
+            <button id="btn3">SEND</button>
+        </form>
+        </div>
+    </div>
+    </div>
+    <div id="block6">
+        <div id="icons">
+            <div><a href=""><img src="location-white.png" alt="location"></a></div>
+            <div><a href=""><img src="telephone-white.png" alt="phone"></a></div>
+            <div><a href=""><img src="envelope-white.png" alt="mail"></a></div>
+        </div>
+        <div id="des">
+            <div><a href="" style="position: relative; left: 60px;">Location</a></div>
+            <div><a href="" style="position: relative; left: 60px;">+02 1234567890</a></div>
+            <div><a href="" style="position: relative;">mail@domain.com</a></div>
+        </div>
+    </div>
+    <div id="end"><span style="font-size: 20px;"> © 2024 All Rights Reserved. By HTML Design</span></div>
+</body>
 </html>
+
+
